@@ -20,7 +20,7 @@ $criteria2 = new TCriteria;
 $criteria2->add(new TFilter('sexo','=','H'));
 $criteria2->add(new TFilter('serie','=','4'));
 
-//agora juntamos os dois criterios utilizando o operador lógico OR(OU).
+// agora juntamos os dois criterios utilizando o operador lógico OR(OU).
 // o resultado deve conter meninas da 3º série ou meninos da 4º série
 $criteria = new TCriteria;
 $criteria->add($criteria1, TExpression::OR_OPERATOR);
